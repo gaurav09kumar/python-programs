@@ -38,3 +38,7 @@ def generate_square(n):
     """
     # Your code here
     return ["*"*n for i in range(n)]
+
+print(generate_square(5))
+print(generate_square(3))
+print(generate_square(1))

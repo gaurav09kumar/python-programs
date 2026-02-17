@@ -11,7 +11,7 @@ def armstrong_number(num):
     while(temp>0):
         digit = temp % 10
         arm_number = arm_number + (digit**count)
-        temp = temp // 10
+        temp = temp // 10 # O(log10(n))
     return arm_number==num
     
 print(armstrong_number(153))

@@ -37,9 +37,12 @@ def factors3(num):
            ans.append(i) # O(1) So ignore
            if num // i != i:
                ans.append(num//i) # O(1) So ignore
-        ans.sort()
+        ans.sort() # O(Nlogn)
     return ans
 
 print(factors3(10))
 print(factors3(15))
 print(factors3(25))
+
+# O(Square root of N) + O(Nlogn)
+# Space Complexity O(k) k is the number of factors
